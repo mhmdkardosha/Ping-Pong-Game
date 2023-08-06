@@ -9,7 +9,7 @@ public class GameFrame extends JFrame {
 
 	GameFrame() {
 		panel = new GamePanel();
-		ImageIcon img = new ImageIcon("C:\\Users\\deel\\Downloads\\logo-removebg-preview.png");
+		ImageIcon img = new ImageIcon("C:\\\\Users\\\\deel\\\\Downloads\\\\ping-pong.png");
 		this.add(panel);
 		this.setTitle("Ping Pong Game");
 		this.setIconImage(img.getImage());

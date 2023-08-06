@@ -12,19 +12,20 @@ public class FirstWindow implements ActionListener {
 	FirstWindow() {
 		button = new JButton();
 		frame = new JFrame();
-		ImageIcon image = new ImageIcon("C:\\Users\\deel\\Downloads\\logo-removebg-preview.png");
-		ImageIcon image2 = new ImageIcon("C:\\Users\\deel\\Downloads\\logo2-removebg-preview.png");
+		ImageIcon image = new ImageIcon("C:\\Users\\deel\\Downloads\\ping-pong.png");
+		ImageIcon image2 = new ImageIcon("C:\\Users\\deel\\Downloads\\Sports__154_-removebg-preview.png");
 		label = new JLabel();
 
 		button.setBounds(130, 300, 200, 50);
 		button.setText("Play Game");
-		button.setFont(new Font("8514oemRegular", Font.BOLD, 25));
+		button.setFont(new Font("Cambria", Font.BOLD, 25));
 		button.setFocusable(false);
 		button.addActionListener(this);
-		button.setBackground(Color.LIGHT_GRAY);
-		button.setForeground(Color.green);
+		button.setBackground(Color.GRAY);
+		button.setForeground(Color.white);
 
-		label.setIcon(image2);
+		ImageIcon img = new ImageIcon(image2.getImage().getScaledInstance(200, 200, java.awt.Image.SCALE_SMOOTH));
+		label.setIcon(img);
 		label.setHorizontalAlignment(JLabel.CENTER);
 		label.setVerticalAlignment(JLabel.CENTER);
 		frame.setVisible(true);
@@ -34,7 +35,7 @@ public class FirstWindow implements ActionListener {
 		frame.setLocationRelativeTo(null);
 		frame.setIconImage(image.getImage());
 		frame.setTitle("Ping Pong Game");
-		frame.getContentPane().setBackground(Color.white);
+		frame.getContentPane().setBackground(Color.decode("#994C00") );
 		frame.add(button);
 		frame.add(label);
 	}
