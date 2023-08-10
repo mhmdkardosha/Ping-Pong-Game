@@ -12,8 +12,8 @@ public class FirstWindow implements ActionListener {
 	FirstWindow() {
 		button = new JButton();
 		frame = new JFrame();
-		ImageIcon image = new ImageIcon("C:\\Users\\deel\\Downloads\\ping-pong.png");
-		ImageIcon image2 = new ImageIcon("C:\\Users\\deel\\Downloads\\Sports__154_-removebg-preview.png");
+		ImageIcon image = new ImageIcon("C:\\Users\\deel\\Documents\\GitHub\\Ping-Pong-Game\\Images for GUI\\ping-pong.png");
+		ImageIcon image2 = new ImageIcon("C:\\Users\\deel\\Documents\\GitHub\\Ping-Pong-Game\\Images for GUI\\Sports__154_-removebg-preview.png");
 		label = new JLabel();
 
 		button.setBounds(130, 300, 200, 50);
