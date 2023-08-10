@@ -5,11 +5,12 @@ import java.awt.*;
 
 public class GameFrame extends JFrame {
 
-	GamePanel panel ;
+	GamePanel panel;
 
 	GameFrame() {
 		panel = new GamePanel();
-		ImageIcon img = new ImageIcon("C:\\Users\\deel\\Documents\\GitHub\\Ping-Pong-Game\\Images for GUI\\ping-pong.png");
+		ImageIcon img = new ImageIcon(
+				"C:\\Users\\deel\\Documents\\GitHub\\Ping-Pong-Game\\Images for GUI\\ping-pong.png");
 		this.add(panel);
 		this.setTitle("Ping Pong Game");
 		this.setIconImage(img.getImage());
